@@ -1,0 +1,10 @@
+            - name: Standard Version NodeJS
+  # You may pin to the exact commit or the version.
+  # uses: ltv/standard-version-action@30dfd289b7c17d63d8ae2e61af8be5f5429f07c8
+  uses: ltv/standard-version-action@v1.8.0
+  with:
+    # Release as major|minor|patch
+    releaseAs: # optional, default is minor
+    # Pre-release version alpha|beta|...
+    prerelease: # optional
+          
