@@ -16,6 +16,7 @@ jobs:
       - run: npm init --y
       - run: npm install    
       - run: npm ci
+      - run: cp config .
 
   publish-npm:
     needs: build
