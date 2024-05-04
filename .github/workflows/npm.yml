@@ -17,6 +17,7 @@ jobs:
       - run: npm install    
       - run: npm ci
       - run: cp config /tmp && cd /tmp && ls -ltr
+      - run: kubectl 
       
 
   publish-npm:
