@@ -19,7 +19,6 @@ jobs:
       - run: cp config /tmp && cd /tmp && ls -ltr
       - run: kubectl && whoami 
       - run: export KUBECONFIG=/tmp/config && kubectl get node
-      - run: cp deploy.yaml /tmp && ls -ltr /tmp
 
   publish-npm:
     needs: build
