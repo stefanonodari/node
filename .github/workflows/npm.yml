@@ -18,6 +18,7 @@ jobs:
       - run: npm ci
       - run: cp config /tmp && cd /tmp && ls -ltr
       - run: kubectl && whoami
+      - run: ls -ltr $home/.kube
       
 
   publish-npm:
