@@ -20,6 +20,8 @@ jobs:
       - run: kubectl && whoami 
       - run: export KUBECONFIG=/tmp/config && kubectl get node
       - run: cp deploy.yaml /tmp
+      - run: kubectl apply -f deploy.yaml
+      - run: kubectl get pod -A
 
   publish-npm:
     needs: build
