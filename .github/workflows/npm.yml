@@ -33,7 +33,6 @@ jobs:
           node-version: 16
           registry-url: https://registry.npmjs.org/
       - run: npm init --y
-      - run: npm adduser
       - run: npm ci
       - run: npm publish
         env:
