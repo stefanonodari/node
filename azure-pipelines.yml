@@ -13,10 +13,9 @@ steps:
 - script: echo Hello, world!
   displayName: 'Run a one-line script'
 
--task:
 - task: Bash@3
   inputs:
-    filePath: '/root/node'
+    filePath: '/root/node/build.sh'
     workingDirectory: '/root/node'
 
 - task: KubernetesManifest@1
